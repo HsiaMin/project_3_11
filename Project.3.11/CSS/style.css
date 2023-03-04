@@ -1,0 +1,263 @@
+html {
+  font-size: 8px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body {
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+/* 測試 */
+
+/* 測試 */
+ul {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+/* header部分 */
+header {
+  background-color: #fff;
+  position: sticky;
+  z-index: 10;
+}
+
+/* 右上角工具列 */
+.menu_tool {
+  padding: 5px 20px 0 0;
+}
+
+.menu_tool::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu_tool li {
+  float: right;
+}
+
+.menu_img {
+  display: block;
+  width: 32px;
+  height: 25px;
+  background-image: url("../img/menu_tool.png");
+  margin-left: 20px;
+}
+
+.menu_img1 {
+  background-position: -2px 0;
+}
+.menu_img2 {
+  background-position: -52px 0;
+}
+.menu_img3 {
+  background-position: -102px 0;
+}
+.menu_img4 {
+  background-position: -148px 0;
+}
+
+/* LOGO圖 */
+.menu_logo {
+  width: 130px;
+  margin: -20px auto 0;
+}
+
+/* nav導覽列 */
+nav {
+  background: linear-gradient(to top, #fdca81 0, #ffe1b7 100%);
+  box-shadow: 0 2px 2px rgb(101, 101, 101);
+}
+
+.nav_ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.nav_ul li {
+  margin-right: 20px;
+}
+
+.nav_ul a {
+  font-size: 2rem;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.nav_ul a:hover {
+  background: linear-gradient(to bottom, #fdca81 0, #ffe1b7 100%);
+}
+
+/* main大圖 */
+main {
+  background-image: url("../img/main_bgi.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fde5c5;
+  letter-spacing: 5px;
+}
+
+main p {
+  font-size: 4rem;
+}
+.main_span {
+  letter-spacing: -1px;
+  padding: 0 20px;
+}
+a.main_a {
+  display: inline;
+  color: #fde5c5;
+  font-size: 2rem;
+}
+/* 商品頁 */
+.product {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  background-color: #fffbef;
+}
+
+.prdocut_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.product_text {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.product_introduction {
+  grid-column: 1/7;
+  grid-row: 1/3;
+  background-image: url("../img/product_title.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 200px;
+  padding-top: 80px;
+}
+.product_p1 {
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(30, 29, 29);
+  letter-spacing: 1rem;
+}
+.product_p2 {
+  font-size: 3rem;
+  text-align: center;
+  background-color: #fff;
+  color: #e88a1065;
+  border-radius: 10px;
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  letter-spacing: 0.8rem;
+}
+
+/* 商品1 */
+.porduct1_left {
+  grid-column: 1/4;
+  grid-row: 3/6;
+  background-color: #ffceae;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 60px 30px 50px 230px;
+}
+
+.porduct1_left img {
+  display: block;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  position: relative;
+  top: -40px;
+  left: -190px;
+}
+
+.product1_right {
+  grid-column: 3/7;
+  grid-row: 3/5;
+  background-color: #ddebc7;
+  height: 250px;
+  margin: 60px 0 50px 450px;
+}
+
+.product1_right::before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50% 0 0 50%;
+  background-color: #ddebc7;
+  position: relative;
+  left: -250px;
+}
+
+.product1_right img {
+  display: block;
+  height: 400px;
+  position: relative;
+  top: -330px;
+  left: -215px;
+}
+
+.product1_right p {
+  position: relative;
+  top: -590px;
+  left: -18px;
+}
+
+/* 商品2 */
+.product2 {
+  grid-column: 1/6;
+  grid-row: 6/9;
+  display: flex;
+  height: 250px;
+  background-color: #e2d9ee;
+}
+.product2::before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 0 50% 50% 0;
+  background-color: #e2d9ee;
+  position: relative;
+  left: 920px;
+}
+
+.product2 img {
+  display: block;
+  height: 250px;
+}
+
+/* 商品3 */
+.porduct3_left {
+  grid-column: 1/4;
+  grid-row: 8/10;
+}
+
+.product3_right {
+  grid-column: 4/7;
+  grid-row: 8/10;
+}
