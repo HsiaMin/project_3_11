@@ -1,0 +1,121 @@
+html {
+  /* RWD為8px */
+  font-size: 8px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+/* 頁首 */
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* 右上角工具列 */
+.menu_tool {
+  padding: 5px 20px 0 0;
+}
+
+.menu_tool::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu_tool li {
+  float: right;
+}
+
+.menu_img {
+  display: block;
+  width: 32px;
+  height: 25px;
+  background-image: url("../img/menu_tool.png");
+  margin-left: 20px;
+}
+
+.menu_img1 {
+  background-position: -2px 0;
+}
+.menu_img2 {
+  background-position: -52px 0;
+}
+.menu_img3 {
+  background-position: -102px 0;
+}
+.menu_img4 {
+  background-position: -148px 0;
+}
+
+/* LOGO圖 */
+.menu_logo {
+  width: 80px;
+  margin: -20px auto 0;
+}
+.menu_logo img {
+  width: 80px;
+}
+
+/* nav導覽列 */
+nav {
+  background: linear-gradient(to top, #fdca81 0, #ffe1b7 100%);
+  box-shadow: 0 2px 2px rgb(101, 101, 101);
+}
+
+.nav_ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.nav_ul li {
+  margin-right: 20px;
+}
+
+.nav_ul a {
+  font-size: 2rem;
+  height: 6rem;
+  line-height: 6rem;
+  padding: 0 10px;
+}
+
+.nav_ul a:hover {
+  background: linear-gradient(to bottom, #fdca81 0, #ffe1b7 100%);
+}
+
+/* 頁尾 */
+footer {
+  padding: 20px 100px;
+  background-color: #fee2ba;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul a {
+  font-size: 2rem;
+  line-height: 1.6;
+  padding: 5px;
+}
+
+.footer1 li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer2 li {
+  margin-right: 20px;
+}
+
+.footer2 li i {
+  font-size: 3rem;
+}

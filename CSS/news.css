@@ -1,0 +1,132 @@
+main {
+  padding: 50px 80px 0;
+  background: linear-gradient(to bottom, #ede4d7 0, #ffffff 200px);
+}
+
+/* 麵包屑 */
+.news_nav {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.news_nav a {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.8rem;
+}
+
+.news_nav .nav_active {
+  color: black;
+}
+
+/* 最新消息 */
+
+.news_text {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.news_text::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1.5px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #c7801d 0px, #f7c545 100%);
+}
+
+/* 商品 */
+.product {
+  display: flex;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px #d2d1d1;
+  margin-bottom: 40px;
+}
+
+.product a {
+  display: flex;
+}
+
+.product img {
+  width: 30%;
+}
+
+/* 商品內文 */
+
+.product_context {
+  padding: 40px 20px;
+}
+
+/* 商品標題 */
+.product_title {
+  background: linear-gradient(to right, #ce902e 0px, #f8d06b 50%, #ce902e 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+  font-size: 3rem;
+}
+
+/* 商品介紹 */
+
+.product_introduction {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.product_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_date {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.product_link {
+  color: #c7801d;
+  font-size: 2rem;
+  padding-right: 40px;
+}
+
+.product_link::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 9px;
+  background-image: url("../img/news_product_link.png");
+  position: relative;
+  left: 25px;
+}
+
+/* 換頁 */
+
+.page_change {
+  display: flex;
+  justify-content: center;
+}
+
+.page_change a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+
+.page_change a:hover {
+  background-color: #fee2bab1;
+}
+
+.page_active {
+  background-color: #fee2bab1;
+}
+
+.arrow_left {
+  transform: rotate(180deg);
+}
