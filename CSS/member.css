@@ -1,1 +1,223 @@
+/* 開頭 */
+.main {
+  text-align: center;
+  margin: 50px 0;
+}
+.main h1 {
+  font-size: 5rem;
+  color: transparent;
+  background: linear-gradient(to right, #ce902e 0px, #f8d06b 50%, #ce902e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  max-width: 100%;
+}
 
+/* 排版 */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+  outline: 1px solid red;
+  align-items: center;
+}
+
+main .copper {
+  align-self: flex-start;
+}
+
+main .silver {
+  align-self: flex-end;
+}
+
+/* 會員框共用 */
+.member {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.member::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-top: 1px solid #c7801d;
+  border-bottom: 1px solid #c7801d;
+  position: absolute;
+  bottom: 0;
+}
+
+.member h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.member h3::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  border-top: 1px solid #c7801d;
+  border-bottom: 1px solid #c7801d;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.member h3::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  border-top: 1px solid #c7801d;
+  border-bottom: 1px solid #c7801d;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.member p {
+  font-weight: 200;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.member_expiry {
+  text-align: center;
+  border-top: 1px solid #e8dfcf;
+  border-bottom: 1px solid #e8dfcf;
+  padding: 15px 20px;
+}
+
+.member_expiry h4 {
+  color: #bebebe;
+}
+
+.member_expiry span {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.member ul {
+  padding: 20px 0;
+}
+
+.member li {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.member li::before {
+  content: "•";
+  padding-right: 5px;
+  color: #c7801d;
+}
+
+/* 銅牌會員 */
+.copper {
+}
+
+.copper h3 {
+  color: #c7801d;
+}
+
+/* 貴賓會員  */
+.silver {
+}
+
+.silver::after {
+  border-image: linear-gradient(
+    to right,
+    #a09392 0px,
+    #d7d5d5 20%,
+    #888383 50%,
+    #d7d7d7 100%
+  );
+  border-image-slice: 1;
+}
+
+.silver h3 {
+  color: transparent;
+  background: -webkit-linear-gradient(
+    right,
+    #a09392 0px,
+    #d7d5d5 20%,
+    #888383 50%,
+    #d7d7d7 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.silver h3::before {
+  border-image: linear-gradient(
+    to right,
+    #a09392 0px,
+    #d7d5d5 20%,
+    #888383 50%,
+    #d7d7d7 100%
+  );
+  border-image-slice: 1;
+}
+
+.silver h3::after {
+  border-image: linear-gradient(
+    to right,
+    #a09392 0px,
+    #d7d5d5 20%,
+    #888383 50%,
+    #d7d7d7 100%
+  );
+  border-image-slice: 1;
+}
+
+/* 尊榮會員 */
+.gold {
+}
+
+.gold:after {
+  border-image: linear-gradient(
+    to right,
+    #ce902e 0px,
+    #f8d06b 50%,
+    #ce902e 100%
+  );
+  border-image-slice: 1;
+}
+
+.gold h3 {
+  color: transparent;
+  background: -webkit-linear-gradient(
+    right,
+    #ce902e 0px,
+    #f8d06b 50%,
+    #ce902e 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gold h3::before {
+  border-image: linear-gradient(
+    to right,
+    #ce902e 0px,
+    #f8d06b 50%,
+    #ce902e 100%
+  );
+  border-image-slice: 1;
+}
+
+.gold h3::after {
+  border-image: linear-gradient(
+    to right,
+    #ce902e 0px,
+    #f8d06b 50%,
+    #ce902e 100%
+  );
+  border-image-slice: 1;
+}
