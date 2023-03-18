@@ -1,7 +1,8 @@
 /* 開頭 */
 .main {
+  background: linear-gradient(to bottom, #ede4d7 0, #ffffff 120px);
   text-align: center;
-  margin: 50px 0;
+  padding: 90px 0 70px;
 }
 .main h1 {
   font-size: 5rem;
@@ -17,9 +18,9 @@
 main {
   display: flex;
   flex-direction: column;
-  padding: 0 200px;
-  outline: 1px solid red;
+  padding: 0 300px;
   align-items: center;
+  position: relative;
 }
 
 main .copper {
@@ -30,12 +31,15 @@ main .silver {
   align-self: flex-end;
 }
 
+main .gold {
+  align-self: flex-start;
+}
+
 /* 會員框共用 */
 .member {
   width: 300px;
-  height: 350px;
+  height: 400px;
   position: relative;
-  margin-bottom: 100px;
 }
 
 .member::after {
@@ -81,6 +85,7 @@ main .silver {
 }
 
 .member p {
+  font-size: 2rem;
   font-weight: 200;
   text-align: center;
   padding: 20px 0;
@@ -120,6 +125,7 @@ main .silver {
 
 /* 銅牌會員 */
 .copper {
+  margin-bottom: 420px;
 }
 
 .copper h3 {
@@ -128,6 +134,7 @@ main .silver {
 
 /* 貴賓會員  */
 .silver {
+  margin-bottom: 420px;
 }
 
 .silver::after {
@@ -176,8 +183,13 @@ main .silver {
   border-image-slice: 1;
 }
 
+.silver p {
+  line-height: 1.6;
+}
+
 /* 尊榮會員 */
 .gold {
+  margin-bottom: 100px;
 }
 
 .gold:after {
@@ -220,4 +232,112 @@ main .silver {
     #ce902e 100%
   );
   border-image-slice: 1;
+}
+
+.gold p {
+  line-height: 1.6;
+}
+
+/* 腳印 */
+.footer_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer_left {
+  position: absolute;
+  top: 925px;
+  right: 1249px;
+  transform: rotateY(180deg);
+}
+.foot_print {
+  position: absolute;
+  width: 60px;
+}
+
+.foot_print1 {
+  top: 142px;
+  right: 526px;
+  transform: rotate(123.43deg);
+}
+.foot_print2 {
+  top: 257px;
+  right: 460px;
+  transform: rotate(-55.76deg);
+}
+.foot_print3 {
+  top: 242px;
+  right: 322px;
+  transform: rotate(136.6deg);
+}
+.foot_print4 {
+  top: 367px;
+  right: 337px;
+  transform: rotate(-48.62deg);
+}
+.foot_print5 {
+  top: 389px;
+  right: 185px;
+  transform: rotate(145.67deg);
+}
+.foot_print6 {
+  top: 503px;
+  right: 249px;
+  transform: rotate(-23.6deg);
+}
+.foot_print7 {
+  top: 546px;
+  right: 101px;
+  transform: rotate(158.79deg);
+}
+.foot_print8 {
+  top: 669px;
+  right: 204px;
+  transform: rotate(-5.48deg);
+}
+.foot_print9 {
+  top: 771px;
+  right: 88px;
+  transform: rotate(-157.51deg);
+}
+.foot_print10 {
+  top: 866px;
+  right: 214px;
+  transform: rotate(24.21deg);
+}
+
+/* 會員計劃按鈕 */
+.member_more {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.member_more a {
+  display: inline-block;
+  padding: 0 40px;
+  margin: 0 5px;
+  background: -webkit-linear-gradient(left, #c7801d 0px, #f7c545 100%);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.member_more a:hover img {
+  transform: translateX(20px);
+}
+
+.member_more span {
+  font-size: 1.8rem;
+}
+
+.member_more img {
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.member_end img {
+  width: 100%;
 }
