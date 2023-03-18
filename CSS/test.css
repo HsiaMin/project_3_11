@@ -1,0 +1,100 @@
+/* 開頭 */
+main {
+  background: linear-gradient(to bottom, #ede4d7 0, #ffffff 120px);
+  padding: 90px 244px 70px;
+}
+
+.test_header h1 {
+  padding-left: 141px;
+  line-height: 1.6;
+  font-size: 4rem;
+  color: #d19540;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.test_header p {
+  line-height: 2;
+  font-size: 2rem;
+  color: #d9a051;
+  padding: 0 54px;
+  margin-bottom: 70px;
+}
+
+.test_header h3 {
+  padding-left: 141px;
+  font-weight: bold;
+  line-height: 1.6;
+  font-size: 4rem;
+  color: #d19540;
+  margin-bottom: 15px;
+}
+.test_header h4 {
+  padding-left: 296px;
+  line-height: 1.6;
+  font-size: 2rem;
+  color: #d9a051;
+  margin-bottom: 100px;
+}
+
+/* 表單測驗 */
+form h3 {
+  font-size: 2.6rem;
+  color: #d19540;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+form > p {
+  line-height: 1.6;
+  font-size: 2rem;
+  color: #d9a051;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d19540;
+  padding-left: 30px;
+}
+
+.question {
+  margin: 10px 0;
+  padding: 30px;
+  border-bottom: 1px solid #d19540;
+}
+
+.question h4 {
+  font-size: 2.5rem;
+  color: #d19540;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.answer {
+  padding: 20px;
+}
+
+.answer p {
+  display: inline-block;
+  margin-right: 20px;
+  color: #d9a051;
+  font-size: 2rem;
+}
+
+.answer input {
+  display: none;
+}
+
+.question label {
+  padding: 8px 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #f7f3f3;
+  color: #d9a051;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+
+.question label:hover {
+  cursor: pointer;
+  background-color: #f3bd72;
+  color: white;
+}
