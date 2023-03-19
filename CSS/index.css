@@ -23,7 +23,7 @@ main {
   background-image: url("../img/main_ribbons.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 180px;
+  width: 100px;
   height: 260px;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@ main {
   transform: rotate(180deg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 180px;
+  width: 100px;
   height: 260px;
   bottom: 0;
   right: 0;
@@ -182,7 +182,7 @@ main {
 .product2 a {
   float: right;
   position: absolute;
-  right: 200px;
+  right: 90px;
   top: -70px;
 }
 

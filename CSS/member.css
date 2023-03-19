@@ -247,8 +247,8 @@ main .gold {
 
 .footer_left {
   position: absolute;
-  top: 925px;
-  right: 1249px;
+  top: 81px;
+  right: 289px;
   transform: rotateY(180deg);
 }
 .foot_print {
@@ -258,52 +258,52 @@ main .gold {
 
 .foot_print1 {
   top: 142px;
-  right: 526px;
+  right: -140px;
   transform: rotate(123.43deg);
 }
 .foot_print2 {
   top: 257px;
-  right: 460px;
+  right: -206px;
   transform: rotate(-55.76deg);
 }
 .foot_print3 {
   top: 242px;
-  right: 322px;
+  right: -344px;
   transform: rotate(136.6deg);
 }
 .foot_print4 {
   top: 367px;
-  right: 337px;
+  right: -329px;
   transform: rotate(-48.62deg);
 }
 .foot_print5 {
   top: 389px;
-  right: 185px;
+  right: -481px;
   transform: rotate(145.67deg);
 }
 .foot_print6 {
   top: 503px;
-  right: 249px;
+  right: -417px;
   transform: rotate(-23.6deg);
 }
 .foot_print7 {
   top: 546px;
-  right: 101px;
+  right: -565px;
   transform: rotate(158.79deg);
 }
 .foot_print8 {
   top: 669px;
-  right: 204px;
+  right: -462px;
   transform: rotate(-5.48deg);
 }
 .foot_print9 {
   top: 771px;
-  right: 88px;
+  right: -578px;
   transform: rotate(-157.51deg);
 }
 .foot_print10 {
   top: 866px;
-  right: 214px;
+  right: -452px;
   transform: rotate(24.21deg);
 }
 

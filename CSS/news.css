@@ -91,6 +91,10 @@ main {
   padding-right: 40px;
 }
 
+.product_link:hover:after {
+  transform: translate(25px);
+}
+
 .product_link::after {
   content: "";
   display: block;
@@ -99,6 +103,7 @@ main {
   background-image: url("../img/news_product_link.png");
   position: relative;
   left: 25px;
+  transition: 0.5s;
 }
 
 /* 換頁 */
