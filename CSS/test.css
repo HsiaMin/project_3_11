@@ -33,7 +33,7 @@ main {
   padding-left: 296px;
   line-height: 1.6;
   font-size: 2rem;
-  color: #d9a051;
+  color: #b97c25;
   margin-bottom: 100px;
 }
 
@@ -88,7 +88,7 @@ form > p {
   margin-right: 20px;
   border-radius: 10px;
   background-color: #f7f3f3;
-  color: #d9a051;
+  color: #ffc779;
   font-size: 2rem;
   transition: 0.5s;
 }
