@@ -4,6 +4,7 @@
   text-align: center;
   padding: 90px 0 70px;
 }
+
 .main h1 {
   font-size: 5rem;
   color: transparent;
@@ -13,6 +14,30 @@
   display: inline-block;
   max-width: 100%;
 }
+
+/* .main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 1020px;
+  left: 142px;
+  width: 291px;
+  height: 233px;
+  background-image: url("../img/member_bgi.png");
+}
+
+.main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 1020px;
+  left: 142px;
+  width: 291px;
+  height: 233px;
+  background-image: url("../img/member_bgi.png");
+} */
 
 /* 排版 */
 main {
@@ -130,6 +155,7 @@ main .gold {
 
 .copper h3 {
   color: #c7801d;
+  position: relative;
 }
 
 /* 貴賓會員  */
