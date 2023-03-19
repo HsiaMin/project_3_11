@@ -75,15 +75,11 @@ nav {
   margin-bottom: 0;
 }
 
-.nav_ul li {
-  margin-right: 20px;
-}
-
 .nav_ul a {
   font-size: 2rem;
   height: 6rem;
   line-height: 6rem;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .nav_ul a:hover {

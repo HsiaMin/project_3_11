@@ -72,7 +72,6 @@
   height: 100%;
   background-color: #d19540;
   position: absolute;
-  order: 1;
 }
 
 /* 歷史圖共用 */
@@ -129,7 +128,6 @@
 /* 右側歷史圖 */
 .history_right {
   flex: 1 0 0;
-  order: 2;
 }
 
 .history_right h3 {
