@@ -112,6 +112,6 @@ form a {
   letter-spacing: 3px;
 }
 
-.test_end img {
-  width: 100%;
+form a:hover {
+  color: #804d05;
 }

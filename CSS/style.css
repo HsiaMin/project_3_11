@@ -86,6 +86,11 @@ nav {
   background: linear-gradient(to bottom, #fdca81 0, #ffe1b7 100%);
 }
 
+/* 結尾前圖片共用 */
+.end img {
+  width: 100%;
+}
+
 /* 頁尾 */
 footer {
   padding: 20px 100px;
