@@ -369,3 +369,9 @@ main .gold {
     padding: 90px 370px 70px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  main {
+    padding: 90px 628px 70px;
+  }
+}
