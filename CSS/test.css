@@ -115,3 +115,9 @@ form a {
 form a:hover {
   color: #804d05;
 }
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 90px 330px 70px;
+  }
+}
