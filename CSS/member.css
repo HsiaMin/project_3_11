@@ -363,3 +363,9 @@ main .gold {
   margin-left: 10px;
   transition: 0.5s;
 }
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 90px 370px 70px;
+  }
+}
