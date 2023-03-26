@@ -24,26 +24,36 @@ main {
   position: relative;
 }
 
-.product::before {
-  content: "";
+#btn_left {
   position: absolute;
   top: 50%;
   left: 0;
   width: 40px;
   height: 40px;
+  background-color: #fff;
   background-image: url("../img/product_arrow.svg");
   transform: rotateY(180deg);
+  border: 0;
+  cursor: pointer;
+  z-index: 10;
 }
-
-.product::after {
-  content: "";
+#btn_right {
   position: absolute;
   top: 50%;
   right: 0;
   width: 40px;
   height: 40px;
+  background-color: #fff;
   background-image: url("../img/product_arrow.svg");
+  border: 0;
+  cursor: pointer;
+  z-index: 10;
 }
+/* JS控制 */
+.btn_hidden {
+  display: none;
+}
+
 /* 商品標題 */
 .product_title {
   font-size: 3rem;
@@ -62,8 +72,13 @@ main {
 
 /* 商品陳列 */
 .product ul {
+  width: 1100px;
   display: flex;
-  justify-content: space-around;
+  overflow: hidden;
+}
+.product li {
+  padding: 0 94px;
+  transition: all 1.5s;
 }
 
 .product_a1 {

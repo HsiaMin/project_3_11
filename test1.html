@@ -1,18 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <style>
-      .a123 {
-        width: 500px;
-        height: 500px;
+      main {
+        padding: 40px 80px 0;
+        background: linear-gradient(to bottom, #ede4d7 0, #ffffff 200px);
+      }
+
+      /* 麵包屑 */
+      .news_nav {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      .news_nav a {
+        margin-right: 10px;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 1.8rem;
+      }
+
+      .news_nav .nav_active {
+        color: black;
+      }
+
+      /* 商品 */
+      .product {
+        position: relative;
+      }
+
+      #btn_left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        background-image: url("../img/product_arrow.svg");
+        transform: rotateY(180deg);
+        border: 0;
+        cursor: pointer;
+        z-index: 10;
+      }
+      #btn_right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        background-image: url("../img/product_arrow.svg");
+        border: 0;
+        cursor: pointer;
+        z-index: 10;
+      }
+      /* JS控制 */
+      .btn_hidden {
+        display: none;
+      }
+
+      /* 商品標題 */
+      .product_title {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .product_title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1.5px;
+        margin: 10px auto 0;
+        background: linear-gradient(to right, #c7801d 0px, #f7c545 100%);
+      }
+
+      /* 商品陳列 */
+      .product ul {
+        width: 1100px;
+        display: flex;
+        overflow: hidden;
+      }
+      .product li {
+        padding: 0 94px;
+        transition: all 1.5s;
+      }
+
+      .product_a1 {
+        margin-bottom: 40px;
+      }
+
+      .product img {
+        width: 180px;
+        height: 180px;
+      }
+
+      .product p {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .product_price {
+        color: #c7801d;
+      }
+
+      .product_a2 {
+        color: #c7801d;
+        border: 1px solid #c7801d;
+        border-radius: 30px;
+        font-size: 2rem;
+        text-align: center;
+        padding: 10px;
+        transition: 0.5s;
+      }
+
+      .product_a2:hover {
+        background: linear-gradient(to right, #c7801d 0px, #f7c545 100%);
+        color: white;
+      }
+
+      .product_footer {
+        width: 100px;
+        margin: 80px auto;
+      }
+
+      .product_footer a {
+        color: #c7801d;
+        font-size: 2rem;
+        transition: 0.5s;
+      }
+
+      .product_footer a::after {
+        content: "";
+        display: block;
+        width: 65px;
+        height: 9px;
+        background-image: url("../img/news_product_link.png");
+        position: relative;
+        left: 25px;
+      }
+
+      .product_footer a:hover {
+        transform: translateX(30px);
+      }
+
+      /* 橫幅圖片 */
+
+      .pic1 {
+        position: absolute;
+        left: 0;
+        font-size: 0;
+        width: 100%;
+      }
+
+      .pic1 img {
+        height: calc(100vh - 141px);
+        width: 100%;
+        display: block;
+      }
+
+      .pic_footer {
+        background: -webkit-linear-gradient(
+          right,
+          #a09392 0px,
+          #d7d5d5 20%,
+          #c5c3c3 50%,
+          #d7d7d7 100%
+        );
+        width: 100%;
+        height: 10px;
+        margin-top: -1px;
+      }
+
+      .pic_margin {
+        margin-top: 100vh;
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>EAC</title>
   </head>
   <body>
-    <div class="a123"></div>
+    <header class="header"></header>
+    <!-- 熱門商品 -->
+    <main>
+      <!-- 麵包屑 -->
+      <div class="news_nav">
+        <a href="index.html">首頁 / </a>
+        <a href="news.html" class="nav_active">巧克力系列</a>
+      </div>
+      <!-- 產品內容 -->
+      <section class="product">
+        <button type="button" id="btn_left" class="btn_hidden"></button>
+        <button type="button" id="btn_right"></button>
+        <div class="product_title">熱門商品</div>
+        <ul>
+          <li id="p1">
+            <a href="" class="product_a1">
+              <img
+                src="./img/product1_left.png"
+                alt="商品圖1"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">巴西果仁巧克力</p>
+            <p class="product_price">NT$480</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li id="p2">
+            <a href="" class="product_a1">
+              <img src="./img/product2.png" alt="商品圖2" class="prodcut_img" />
+            </a>
+            <p class="product_name">巧克力甜甜圈</p>
+            <p class="product_price">NT$120</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li id="p3">
+            <a href="" class="product_a1">
+              <img
+                src="./img/product3_right.png"
+                alt="商品圖3"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">草莓巧克力</p>
+            <p class="product_price">NT$360</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li id="p4" class="hidden">
+            <a href="" class="product_a1">
+              <img
+                src="./img/product3_left.png"
+                alt="商品圖4"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">黑森林巧克力</p>
+            <p class="product_price">NT$880</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li id="p5" class="hidden">
+            <a href="" class="product_a1">
+              <img
+                src="./img/product1_left.png"
+                alt="商品圖5"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">草莓巧克力</p>
+            <p class="product_price">NT$360</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+        </ul>
+        <div class="product_footer">
+          <a href="">查看全部</a>
+        </div>
+      </section>
+      <!-- 商品圖1 -->
+      <div class="pic1">
+        <img src="./img/product_pic1.jpg" alt="巧克力圖片1" />
+        <div class="pic_footer"></div>
+      </div>
+      <!-- 推薦商品 -->
+      <section class="product pic_margin">
+        <div class="product_title">推薦商品</div>
+        <ul>
+          <li>
+            <a href="" class="product_a1">
+              <img
+                src="./img/product3_left.png"
+                alt="商品圖1"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">黑森林巧克力</p>
+            <p class="product_price">NT$880</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li>
+            <a href="" class="product_a1">
+              <img
+                src="./img/product3_right.png"
+                alt="商品圖2"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">草莓巧克力</p>
+            <p class="product_price">NT$360</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li>
+            <a href="" class="product_a1">
+              <img
+                src="./img/product1_left.png"
+                alt="商品圖3"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">巴西果仁巧克力</p>
+            <p class="product_price">NT$480</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+        </ul>
+        <div class="product_footer">
+          <a href="">查看全部</a>
+        </div>
+      </section>
+      <!-- 商品圖2 -->
+      <!-- <div class="pic1">
+        <img src="" alt="巧克力圖片2" />
+      </div> -->
+    </main>
+    <div class="end"><img src="./img/member_footer.png" alt="" /></div>
+    <footer class="footer"></footer>
+    <script src="./swiper.js"></script>
+    <script src="./product.js"></script>
   </body>
 </html>

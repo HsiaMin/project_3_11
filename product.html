@@ -31,9 +31,11 @@
       </div>
       <!-- 產品內容 -->
       <section class="product">
+        <button type="button" id="btn_left" class="btn_hidden"></button>
+        <button type="button" id="btn_right"></button>
         <div class="product_title">熱門商品</div>
         <ul>
-          <li>
+          <li id="p1">
             <a href="" class="product_a1">
               <img
                 src="./img/product1_left.png"
@@ -45,7 +47,7 @@
             <p class="product_price">NT$480</p>
             <a href="" class="product_a2">加入購物車</a>
           </li>
-          <li>
+          <li id="p2">
             <a href="" class="product_a1">
               <img src="./img/product2.png" alt="商品圖2" class="prodcut_img" />
             </a>
@@ -53,11 +55,35 @@
             <p class="product_price">NT$120</p>
             <a href="" class="product_a2">加入購物車</a>
           </li>
-          <li>
+          <li id="p3">
             <a href="" class="product_a1">
               <img
                 src="./img/product3_right.png"
                 alt="商品圖3"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">草莓巧克力</p>
+            <p class="product_price">NT$360</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li id="p4" class="hidden">
+            <a href="" class="product_a1">
+              <img
+                src="./img/product3_left.png"
+                alt="商品圖4"
+                class="prodcut_img"
+              />
+            </a>
+            <p class="product_name">黑森林巧克力</p>
+            <p class="product_price">NT$880</p>
+            <a href="" class="product_a2">加入購物車</a>
+          </li>
+          <li id="p5" class="hidden">
+            <a href="" class="product_a1">
+              <img
+                src="./img/product1_left.png"
+                alt="商品圖5"
                 class="prodcut_img"
               />
             </a>
@@ -128,5 +154,6 @@
     <div class="end"><img src="./img/member_footer.png" alt="" /></div>
     <footer class="footer"></footer>
     <script src="./swiper.js"></script>
+    <script src="./product.js"></script>
   </body>
 </html>
