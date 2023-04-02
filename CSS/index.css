@@ -57,7 +57,7 @@ main {
   margin-right: 6vw;
 }
 
-.main_text img {
+.main_text > img {
   animation: aaa 2s infinite;
 }
 
@@ -70,16 +70,27 @@ main {
 }
 
 .main_text a {
-  background-color: #d37a0771;
-  color: white;
-  border-radius: 20px;
-  margin-top: 20px;
-  font-size: 3rem;
-  line-height: 1.9;
+  display: block;
+  padding: 0 40px;
+  margin: 20px 5px 0;
+  background: -webkit-linear-gradient(left, #c7801d 0px, #f7c545 100%);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: #fff;
+  line-height: 50px;
 }
 
-.main_text a:hover {
-  color: #804d05;
+.main_text a:hover img {
+  transform: translateX(10px);
+}
+
+.main_text a span {
+  font-size: 1.8rem;
+}
+
+.main_text a img {
+  display: inline-block;
+  transition: 0.5s;
 }
 
 /* 商品頁 */

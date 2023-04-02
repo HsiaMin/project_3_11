@@ -203,6 +203,7 @@
 /* 歷史結尾 */
 .history_footer {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .history_footer p {
@@ -214,12 +215,26 @@
 }
 
 .history_footer a {
-  width: 170px;
-  color: white;
-  background-color: #d19540;
-  font-size: 2rem;
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px;
-  border-radius: 1px;
+  display: inline-block;
+  padding: 0 40px;
+  margin: 0 5px;
+  background: -webkit-linear-gradient(left, #c7801d 0px, #f7c545 100%);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.history_footer a:hover img {
+  transform: translateX(10px);
+}
+
+.history_footer span {
+  font-size: 1.8rem;
+}
+
+.history_footer img {
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.5s;
 }

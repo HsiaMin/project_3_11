@@ -92,7 +92,7 @@ main {
 }
 
 .product_link:hover:after {
-  transform: translate(25px);
+  transform: translate(10px);
 }
 
 .product_link::after {

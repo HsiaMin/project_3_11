@@ -351,7 +351,7 @@ main .gold {
 }
 
 .member_more a:hover img {
-  transform: translateX(20px);
+  transform: translateX(10px);
 }
 
 .member_more span {

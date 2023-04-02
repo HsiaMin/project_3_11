@@ -99,21 +99,31 @@ form > p {
   color: white;
 }
 
-form a {
-  width: 100px;
-  color: white;
-  background-color: #d19540;
-  font-size: 2rem;
-  margin: 50px auto 0;
-  text-align: center;
-  padding: 15px;
-  line-height: 1.2;
-  border-radius: 3px;
-  letter-spacing: 3px;
+/* 送出按鈕 */
+form button {
+  display: block;
+  padding: 0 40px;
+  margin: 60px auto;
+  background: -webkit-linear-gradient(left, #c7801d 0px, #f7c545 100%);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: #fff;
+  line-height: 50px;
+  cursor: pointer;
 }
 
-form a:hover {
-  color: #804d05;
+form button:hover img {
+  transform: translateX(10px);
+}
+
+form button span {
+  font-size: 1.8rem;
+}
+
+form button img {
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 1440px) {
