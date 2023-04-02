@@ -78,12 +78,14 @@
 .history_content {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .history_content p {
   font-size: 2rem;
   color: #d19540;
   line-height: 1.6;
+  margin-top: 5px;
 }
 
 .history_content img {
@@ -91,7 +93,7 @@
 }
 
 .history_content h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #d19540;
   background-color: #fff;
 }
@@ -125,6 +127,10 @@
   right: -2px;
 }
 
+.history_content_left img {
+  margin: 20px 160px 0 0;
+}
+
 /* 右側歷史圖 */
 .history_right {
   flex: 1 0 0;
@@ -156,6 +162,10 @@
   position: absolute;
   top: 39%;
   left: -2px;
+}
+
+.history_content_right img {
+  margin: 20px 0 0 160px;
 }
 
 /* 各年份間距離 */
