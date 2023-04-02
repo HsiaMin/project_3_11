@@ -1,3 +1,10 @@
+$(function () {
+  $(".header").load("common.html .header>*", function () {
+    // 在加载 header 完成後執行其他操作
+    $(".nav_ul li:nth-child(3) a").addClass("active");
+    $(".footer").load("common.html .footer>*");
+  });
+});
 //產品輪播
 let btn_left_el = document.getElementById("btn_left");
 let btn_right_el = document.getElementById("btn_right");

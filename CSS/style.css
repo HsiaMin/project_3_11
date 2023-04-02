@@ -84,6 +84,13 @@ nav {
 
 .nav_ul a:hover {
   background: linear-gradient(to bottom, #fdca81 0, #ffe1b7 100%);
+  color: black;
+}
+
+/* 麵包屑 */
+.active {
+  background-color: #e49f41;
+  color: white;
 }
 
 /* 結尾前圖片共用 */
