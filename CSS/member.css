@@ -60,6 +60,10 @@ main .gold {
   align-self: flex-start;
 }
 
+main span {
+  font-size: 3rem;
+  color: #ce8117;
+}
 /* 會員框共用 */
 .member {
   width: 300px;
@@ -352,10 +356,6 @@ main .gold {
 
 .member_more a:hover img {
   transform: translateX(10px);
-}
-
-.member_more span {
-  font-size: 1.8rem;
 }
 
 .member_more img {
