@@ -59,14 +59,26 @@ header {
   width: 80px;
   margin: -20px auto 0;
 }
+
 .menu_logo img {
   width: 80px;
 }
 
+.menu_logo a {
+  height: 82px;
+  transition: all 1s;
+}
+
+.menu_logo .logo_on {
+  height: 36px;
+  transform: translateY(-90px);
+}
 /* nav導覽列 */
 nav {
   background: linear-gradient(to top, #fdca81 0, #ffe1b7 100%);
   box-shadow: 0 2px 2px rgb(101, 101, 101);
+  position: relative;
+  z-index: 10;
 }
 
 .nav_ul {
