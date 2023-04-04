@@ -1,0 +1,46 @@
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 90px 325px 70px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main {
+    padding: 90px 566px 70px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* 開頭 */
+  main {
+    padding: 60px 0 70px;
+  }
+
+  .test_header h1 {
+    padding-left: 40px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .test_header p {
+    line-height: 1.3;
+    font-weight: light;
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+
+  .test_header h3 {
+    padding-left: 45px;
+    font-size: 2.8rem;
+  }
+
+  .test_header h4 {
+    padding-left: 121px;
+    margin-bottom: 30px;
+  }
+
+  /* 表單測驗 */
+  .answer p {
+    display: none;
+  }
+}

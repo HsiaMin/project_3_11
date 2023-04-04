@@ -2,7 +2,7 @@ $(function () {
   $(".header").load("common.html .header>*", function () {
     // 在加载 header 完成後執行其他操作
     $(".nav_ul li:nth-child(5) a").addClass("active");
-    $(window).resize(function () {
+    $(window).ready(function () {
       var width = $(window).width();
       if (width > 414) {
         $(window).scroll(function () {

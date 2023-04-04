@@ -2,8 +2,6 @@
 main {
   background: linear-gradient(to bottom, #ede4d7 0, #ffffff 120px);
   padding: 90px 244px 70px;
-  /* 測試 */
-  display: none;
 }
 
 .test_header h1 {
@@ -85,6 +83,11 @@ form > p {
   display: none;
 }
 
+.question label.answer_checked {
+  background: linear-gradient(to right, #e1a652 0px, #f7c545 100%);
+  color: white;
+}
+
 .question label {
   padding: 8px 10px;
   margin-right: 20px;
@@ -126,16 +129,4 @@ form button img {
   display: inline-block;
   margin-left: 10px;
   transition: 0.5s;
-}
-
-@media screen and (min-width: 1440px) {
-  main {
-    padding: 90px 325px 70px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  main {
-    padding: 90px 566px 70px;
-  }
 }

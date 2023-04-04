@@ -1,6 +1,6 @@
 $(function () {
   $(".header").load("common.html .header>*", function () {
-    $(window).resize(function () {
+    $(window).ready(function () {
       var width = $(window).width();
       if (width > 414) {
         $(window).scroll(function () {
