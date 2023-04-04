@@ -73,12 +73,64 @@ header {
   height: 36px;
   transform: translateY(-90px);
 }
+
+/* 漢堡排 */
+.container {
+  position: absolute;
+  top: 22.5px;
+  right: 0;
+  height: 42.75px;
+  width: 58.5px;
+  transition: 1s;
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  height: 42.75px;
+  width: 50.5px;
+  cursor: pointer;
+}
+
+.toggle:after,
+.toggle:before {
+  content: "";
+  background: #d19540;
+  width: 36px;
+  height: 4.5px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+}
+
+.toggle:before {
+  top: -30%;
+}
+
+.toggle:after {
+  top: 30%;
+}
+
+.toggle.open:before {
+  transform: rotate(-225deg);
+  top: 0;
+}
+
+.toggle.open:after {
+  transform: rotate(225deg);
+  top: 0;
+}
 /* nav導覽列 */
 nav {
   background: linear-gradient(to top, #fdca81 0, #ffe1b7 100%);
   box-shadow: 0 2px 2px rgb(101, 101, 101);
   position: relative;
   z-index: 10;
+  transition: all 1s;
 }
 
 .nav_ul {
@@ -133,9 +185,83 @@ footer ul a {
 }
 
 .footer2 li {
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 .footer2 li i {
   font-size: 3rem;
+}
+
+/* RWD */
+@media screen and (max-width: 414px) {
+  /* 右上角工具列 */
+  .menu_tool {
+    display: none;
+  }
+
+  /* nav導覽列 */
+  nav {
+    position: fixed;
+    width: 100vw;
+    left: 100vw;
+    top: 82px;
+  }
+
+  .nav_on {
+    left: 0;
+  }
+
+  .nav_ul {
+    flex-direction: column;
+  }
+
+  .nav_ul li {
+    margin: 0 20px;
+  }
+
+  .nav_ul a {
+    font-size: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .nav_ul li:last-child a {
+    border-bottom: 0;
+  }
+
+  /* LOGO圖 */
+  .menu_logo {
+    height: 82px;
+  }
+  .menu_logo a {
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 60px;
+  }
+  .menu_logo img {
+    width: 60px;
+  }
+
+  /* 漢堡排 */
+  .container {
+    display: block;
+  }
+
+  /* 頁尾 */
+  footer {
+    padding: 20px 55px;
+  }
+
+  .footer1 {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .footer2 li i {
+    font-size: 5rem;
+  }
 }

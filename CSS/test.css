@@ -2,6 +2,8 @@
 main {
   background: linear-gradient(to bottom, #ede4d7 0, #ffffff 120px);
   padding: 90px 244px 70px;
+  /* 測試 */
+  display: none;
 }
 
 .test_header h1 {
