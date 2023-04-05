@@ -2,6 +2,8 @@ $(function () {
   $(".header").load("common.html .header>*", function () {
     // 在加载 header 完成後執行其他操作
     $(".nav_ul li:nth-child(3) a").addClass("active");
+
+    // 螢幕寬度大於414才執行雪碧圖
     $(window).ready(function () {
       var width = $(window).width();
       if (width > 414) {
@@ -25,6 +27,7 @@ $(function () {
     $(".footer").load("common.html .footer>*");
   });
 });
+
 // 原生JS
 //產品輪播1
 let btn_left_el = document.getElementById("btn_left");

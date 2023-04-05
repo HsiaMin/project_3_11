@@ -1,0 +1,19 @@
+@media screen and (max-width: 415px) {
+  main {
+    padding: 40px 22px 0;
+  }
+
+  .product ul {
+    width: 390px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .pic1 img {
+    height: auto;
+  }
+
+  .pic_margin {
+    margin-top: 60vh;
+  }
+}

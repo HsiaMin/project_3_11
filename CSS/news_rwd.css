@@ -1,0 +1,38 @@
+@media screen and (max-width: 415px) {
+  main {
+    padding: 50px 35px 0;
+  }
+
+  .news_nav {
+    margin-bottom: 30px;
+  }
+
+  .news_text {
+    margin-bottom: 30px;
+  }
+
+  .product {
+    margin-bottom: 60px;
+  }
+
+  .product a {
+    flex-direction: column;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .product_context {
+    padding: 20px 20px;
+  }
+
+  .product_title {
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .product_date {
+    font-size: 1.5rem;
+  }
+}
