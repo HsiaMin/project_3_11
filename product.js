@@ -14,6 +14,10 @@ $(function () {
             $(".menu_logo a").removeClass("logo_on");
           }
         });
+      } //RWD下多幫兩個li加入hidden
+      else {
+        $("ul li:nth-child(2)").addClass("hidden");
+        $("ul li:nth-child(3)").addClass("hidden");
       }
     });
 
@@ -47,14 +51,14 @@ btn_right_el.addEventListener("click", function (e) {
     product[i].style.transform = `translate(${times}px)`;
   }
 
-  //   對第一個沒有class的新增class
-  let add_class = product_el.querySelector("ul li:not(.hidden)");
-  add_class.classList.add("hidden");
-
   //   移除最後一個沒有class的下一個的class
   let delete_class = product_el.querySelectorAll("ul li:not(.hidden)");
   delete_class = delete_class[delete_class.length - 1];
   delete_class.nextElementSibling.classList.remove("hidden");
+
+  //   對第一個沒有class的新增class
+  let add_class = product_el.querySelector("ul li:not(.hidden)");
+  add_class.classList.add("hidden");
 
   // 當最後一個商品出現時，按鈕消失
   let right_prevent = product[product.length - 1].getAttribute("class");
@@ -75,14 +79,14 @@ btn_left_el.addEventListener("click", function (e) {
     product[i].style.transform = `translate(${times}px)`;
   }
 
+  //   移除第一個沒有class的前一個的class
+  let delete_class = product_el.querySelector("ul li:not(.hidden)");
+  delete_class.previousElementSibling.classList.remove("hidden");
+
   //對最後一個沒有class的新增class;
   let add_class = product_el.querySelectorAll("ul li:not(.hidden)");
   add_class = add_class[add_class.length - 1];
   add_class.classList.add("hidden");
-
-  //   移除第一個沒有class的前一個的class
-  let delete_class = product_el.querySelector("ul li:not(.hidden)");
-  delete_class.previousElementSibling.classList.remove("hidden");
 
   // 當第一個商品出現時，按鈕消失
   let right_prevent = product[0].getAttribute("class");
@@ -109,14 +113,14 @@ btn_right_el1.addEventListener("click", function (e) {
     product1[i].style.transform = `translate(${times1}px)`;
   }
 
-  //   對第一個沒有class的新增class
-  let add_class1 = product_el1.querySelector("ul li:not(.hidden)");
-  add_class1.classList.add("hidden");
-
   //   移除最後一個沒有class的下一個的class
   let delete_class1 = product_el1.querySelectorAll("ul li:not(.hidden)");
   delete_class1 = delete_class1[delete_class1.length - 1];
   delete_class1.nextElementSibling.classList.remove("hidden");
+
+  //   對第一個沒有class的新增class
+  let add_class1 = product_el1.querySelector("ul li:not(.hidden)");
+  add_class1.classList.add("hidden");
 
   // 當最後一個商品出現時，按鈕消失
   let right_prevent1 = product1[product1.length - 1].getAttribute("class");
@@ -137,14 +141,14 @@ btn_left_el1.addEventListener("click", function (e) {
     product1[i].style.transform = `translate(${times1}px)`;
   }
 
+  //   移除第一個沒有class的前一個的class
+  let delete_class1 = product_el1.querySelector("ul li:not(.hidden)");
+  delete_class1.previousElementSibling.classList.remove("hidden");
+
   //對最後一個沒有class的新增class;
   let add_class1 = product_el1.querySelectorAll("ul li:not(.hidden)");
   add_class1 = add_class1[add_class1.length - 1];
   add_class1.classList.add("hidden");
-
-  //   移除第一個沒有class的前一個的class
-  let delete_class1 = product_el1.querySelector("ul li:not(.hidden)");
-  delete_class1.previousElementSibling.classList.remove("hidden");
 
   // 當第一個商品出現時，按鈕消失
   let right_prevent1 = product1[0].getAttribute("class");

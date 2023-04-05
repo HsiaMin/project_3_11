@@ -3,10 +3,18 @@
     padding: 40px 22px 0;
   }
 
+  .news_nav {
+    margin-bottom: 25px;
+  }
+
   .product ul {
     width: 390px;
     display: flex;
     overflow: hidden;
+  }
+
+  .product_footer a {
+    padding-left: 10px;
   }
 
   .pic1 img {
@@ -15,5 +23,15 @@
 
   .pic_margin {
     margin-top: 60vh;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .product ul {
+    width: 347px;
+  }
+
+  .product li {
+    padding: 0 74px;
   }
 }
