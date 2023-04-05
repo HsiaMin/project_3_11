@@ -1,0 +1,29 @@
+@media screen and (max-width: 415px) {
+  main {
+    padding: 0 60px;
+  }
+  .footer_right {
+    display: none;
+  }
+  .footer_left {
+    display: none;
+  }
+
+  .copper {
+    margin-bottom: 300px;
+  }
+
+  .silver {
+    margin-bottom: 300px;
+  }
+
+  .member_more {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    padding: 0 40px;
+  }
+}
