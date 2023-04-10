@@ -112,4 +112,24 @@
     margin: 20px 0 180px 86px;
     background-color: #ddebc7;
   }
+
+  /* IG圖 */
+  .ig {
+    padding: 40px 10px 20px;
+  }
+
+  .ig_infor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ig_infor p {
+    margin: 0;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .ig_infor span {
+    margin-bottom: 10px;
+  }
 }

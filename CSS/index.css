@@ -247,6 +247,78 @@ main {
   margin-bottom: 120px;
 }
 
+/* IG圖 */
+.ig {
+  background-color: #fffbef;
+  padding: 100px 20px 50px;
+}
+
+.ig_infor {
+  display: flex;
+  align-items: flex-start;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.ig_infor img {
+  border: 1px solid #c08332;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 20px;
+  width: 110px;
+}
+
+.ig_infor p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  font-weight: lighter;
+  margin-right: 300px;
+}
+
+.ig_infor span {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+.ig_infor a {
+  width: 160px;
+  align-self: center;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #c7801d 0px, #f7c545 100%);
+  color: #fff;
+  border-radius: 5px;
+  line-height: 35px;
+  font-size: 2rem;
+}
+
+.ig_infor a:hover {
+  border: 1px solid #c7801d;
+  color: #c7801d;
+  background: #fffbef;
+}
+
+/* IG圖 */
+.ig_pic {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 840px;
+  margin: 50px auto;
+}
+
+.ig_pic li {
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: calc((100% - 30px) / 3);
+  overflow: hidden;
+}
+
+.ig_pic li img {
+  width: 100%;
+}
+
 /* animation */
 
 @keyframes aaa {
