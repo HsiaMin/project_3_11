@@ -1,0 +1,115 @@
+@media screen and (max-width: 415px) {
+  main {
+    height: auto;
+    padding-top: 100px;
+  }
+  .main_wrapper {
+    padding: 0;
+    border: 0;
+  }
+
+  .main_wrapper::before {
+    display: none;
+  }
+
+  .main_wrapper::after {
+    display: none;
+  }
+
+  .main_pic img {
+    display: none;
+  }
+
+  .main_text {
+    margin-right: 0;
+  }
+
+  /* 商品調整 */
+  .product_introduction {
+    height: auto;
+  }
+
+  .product a:hover img {
+    transform: none;
+  }
+
+  .product1_left {
+    order: 1;
+    margin: 20px 0 180px 86px;
+  }
+
+  .product1_left img {
+    position: relative;
+    top: 60px;
+    left: 128px;
+    height: 200px;
+  }
+
+  .product1_left .prdocut_title {
+    margin-top: 70px;
+  }
+
+  .product1_right {
+    order: 2;
+    margin: 0 0 100px 0;
+  }
+
+  .product1_right a {
+    position: static;
+  }
+
+  .product1_right img {
+    position: relative;
+    height: 250px;
+    left: 25px;
+    top: 0px;
+  }
+
+  .product1_right_wrapper {
+    margin: 0;
+  }
+
+  .product1_right .prdocut_title {
+    margin-top: 80px;
+  }
+
+  /* 產品2 */
+  .product2 {
+    order: 4;
+    margin: 0 0 50px 0;
+    flex: 1 0 0;
+  }
+
+  .product2_introduction {
+    margin: 0;
+    flex: 1 0 0;
+  }
+
+  .product2 a {
+    position: static;
+  }
+
+  .product2 img {
+    height: 200px;
+    position: relative;
+    top: 23px;
+    left: -10px;
+  }
+
+  .product2 .prdocut_title {
+    margin-top: 75px;
+  }
+
+  /* 產品3 */
+  .product3_left {
+    order: 3;
+    margin: -20px 0 180px 86px;
+    background-color: #ffceae;
+  }
+
+  .product3_right {
+    order: 5;
+    margin: 20px 0 180px 86px;
+    background-color: #ddebc7;
+  }
+}

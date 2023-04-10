@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/index_rwd.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>EAC</title>
   </head>
@@ -40,10 +41,10 @@
       </div>
     </main>
     <!-- 商品頁 -->
-    <div class="product">
-      <section class="product_introduction">
-        <p class="product_p1">EAC精選系列</p>
-      </section>
+    <div class="product_introduction">
+      <p class="product_p1">EAC精選系列</p>
+    </div>
+    <section class="product">
       <!-- 商品1 -->
       <div class="product1_left">
         <a href="#"> <img src="./img/product1_left.png" alt="巧克力圖" /></a>
@@ -54,10 +55,12 @@
       </div>
       <div class="product1_right">
         <a href="#"> <img src="./img/product1_right.png" alt="巧克力圖" /></a>
-        <p class="prdocut_title">巧克力芭菲</p>
-        <p class="product_text">
-          炎炎夏日消暑聖品<br />濃郁巧克力香氣和柔滑質感
-        </p>
+        <div class="product1_right_wrapper">
+          <p class="prdocut_title">巧克力芭菲</p>
+          <p class="product_text">
+            炎炎夏日消暑聖品<br />濃郁巧克力香氣和柔滑質感
+          </p>
+        </div>
       </div>
       <!-- 商品2 -->
       <div class="product2">
@@ -82,7 +85,7 @@
           草莓內餡與濃郁巧克力交融<br />酸甜可口，綿密柔軟
         </p>
       </div>
-    </div>
+    </section>
     <footer class="footer"></footer>
     <script src="./index.js"></script>
   </body>
