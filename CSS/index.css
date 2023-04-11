@@ -307,7 +307,7 @@ main {
   margin: 50px auto;
 }
 
-.ig_pic li {
+.ig_pic a {
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 10px;
@@ -315,10 +315,37 @@ main {
   overflow: hidden;
 }
 
-.ig_pic li img {
-  width: 100%;
+.ig_pic a:hover div {
+  transform: scale(1.1);
 }
 
+.ig_pic div {
+  padding-bottom: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.pic1 {
+  background-image: url("../img/ig_pic1.png");
+}
+.pic2 {
+  background-image: url("../img/ig_pic2.png");
+}
+.pic3 {
+  background-image: url("../img/ig_pic3.png");
+}
+.pic4 {
+  background-image: url("../img/ig_pic4.png");
+}
+.pic5 {
+  background-image: url("../img/ig_pic5.png");
+}
+.pic6 {
+  background-image: url("../img/ig_pic6.png");
+}
 /* animation */
 
 @keyframes aaa {

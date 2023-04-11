@@ -85,6 +85,26 @@ header {
   display: none;
 }
 
+.container:after {
+  content: "";
+  background: #d19540;
+  width: 36px;
+  height: 4.7px;
+  margin: auto;
+  position: absolute;
+  top: -37px;
+  bottom: 0;
+  right: 8px;
+  left: 0;
+  transition: 1s ease;
+  opacity: 1;
+}
+
+.container.open:after {
+  opacity: 0;
+  /* display: none; */
+}
+
 .toggle {
   position: relative;
   height: 42.75px;

@@ -30,6 +30,7 @@ $(function () {
       // 導覽列出現
       $("nav").toggleClass("nav_on");
       $(this).toggleClass("open");
+      $(".container").toggleClass("open");
     });
     // 頁尾
     $(".footer").load("common.html .footer>*");

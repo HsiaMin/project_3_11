@@ -20,6 +20,7 @@ $(function () {
       // 導覽列出現
       $("nav").toggleClass("nav_on");
       $(this).toggleClass("open");
+      $(".container").toggleClass("open");
     });
 
     // 被選到的答案+Class

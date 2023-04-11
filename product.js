@@ -4,7 +4,7 @@ $(function () {
     $(".nav_ul li:nth-child(3) a").addClass("active");
 
     // 螢幕寬度大於414才執行雪碧圖
-    $(window).ready(function () {
+    $(document).ready(function () {
       var width = $(window).width();
       if (width > 414) {
         $(window).scroll(function () {
@@ -26,6 +26,7 @@ $(function () {
       // 導覽列出現
       $("nav").toggleClass("nav_on");
       $(this).toggleClass("open");
+      $(".container").toggleClass("open");
     });
     // 頁尾
     $(".footer").load("common.html .footer>*");
