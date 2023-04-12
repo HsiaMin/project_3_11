@@ -3,6 +3,10 @@
     padding: 0 40px;
   }
 
+  .brand_introduction_wrap h3 {
+    line-height: 1.5;
+  }
+
   .history_content {
     flex-direction: column;
   }

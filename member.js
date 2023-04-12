@@ -5,12 +5,39 @@ $(function () {
     $(window).ready(function () {
       var width = $(window).width();
       if (width > 414) {
+        // 雪碧圖
         $(window).scroll(function () {
           if ($(this).scrollTop() > 0) {
             $(".menu_logo a").addClass("logo_on");
           } else {
             $(".menu_logo a").removeClass("logo_on");
           }
+        });
+
+        //腳印
+        $(document).ready(function () {
+          let i = 0;
+          $(window).on("wheel", function (event) {
+            let scrollTop = $(this).scrollTop();
+            console.log(scrollTop);
+            if (scrollTop < 1700) {
+              if (event.originalEvent.deltaY > 0) {
+                i++;
+                $(`#foot_print${i}`).css("opacity", "1");
+                // scrollCount++;
+              } else {
+                $(`#foot_print${i}`).css("opacity", "0");
+                i--;
+                // scrollCount--;
+              }
+
+              if (i < 0) {
+                i = 0;
+              } else if (i > 16) {
+                i = 16;
+              }
+            }
+          });
         });
       }
     });

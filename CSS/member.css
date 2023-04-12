@@ -15,30 +15,6 @@
   max-width: 100%;
 }
 
-/* .main::before {
-  content: "";
-  display: block;
-  position: absolute;
-  position: absolute;
-  top: 1020px;
-  left: 142px;
-  width: 291px;
-  height: 233px;
-  background-image: url("../img/member_bgi.png");
-}
-
-.main::after {
-  content: "";
-  display: block;
-  position: absolute;
-  position: absolute;
-  top: 1020px;
-  left: 142px;
-  width: 291px;
-  height: 233px;
-  background-image: url("../img/member_bgi.png");
-} */
-
 /* 排版 */
 main {
   display: flex;
@@ -284,8 +260,10 @@ main span {
 .foot_print {
   position: absolute;
   width: 60px;
+  opacity: 0;
+  transition: 1s;
 }
-
+/* 
 .foot_print1 {
   top: 142px;
   right: -140px;
@@ -335,7 +313,68 @@ main span {
   top: 866px;
   right: -452px;
   transform: rotate(24.21deg);
+} */
+.foot_print1 {
+  top: 52px;
+  right: -90px;
+  transform: rotate(123.43deg);
 }
+
+.foot_print2 {
+  top: 195px;
+  right: -138px;
+  transform: rotate(-55.76deg);
+}
+
+.foot_print3 {
+  top: 237px;
+  right: -300px;
+  transform: rotate(136.6deg);
+}
+
+.foot_print4 {
+  top: 401px;
+  right: -345px;
+  transform: rotate(-48.62deg);
+}
+
+.foot_print5 {
+  top: 481px;
+  right: -481px;
+  transform: rotate(145.67deg);
+}
+
+.foot_print6 {
+  top: 617px;
+  right: -466px;
+  transform: rotate(-23.6deg);
+}
+
+.foot_print7 {
+  top: 746px;
+  right: -584px;
+  transform: rotate(158.79deg);
+}
+
+.foot_print8 {
+  top: 869px;
+  right: -472px;
+  transform: rotate(18.52deg);
+}
+
+/* .foot_print9 {
+  top: 930px;
+  right: -578px;
+  transform: rotate(-157.51deg);
+  display: none;
+}
+
+.foot_print10 {
+  top: 976px;
+  right: -452px;
+  transform: rotate(36.21deg);
+  display: none;
+} */
 
 /* 會員計劃按鈕 */
 .member_more {
